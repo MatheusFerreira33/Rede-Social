@@ -1,0 +1,85 @@
+.modal__container{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color:var( --grey-opacity-1);
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+
+.modal__container .modal{
+    width: 300px;
+    max-width: 100%;
+    background-color: var( --color-fixed);
+    border-radius: 8px;
+    position: absolute;
+    top: 10%;
+    height: 500px; 
+    overflow-y : scroll;
+}
+
+.modal .header__modal{
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+}
+
+.modal .header__modal > figure > img{
+    height: 4rem;
+    margin-left: -35px;
+}
+
+.modal .header__modal > ul{
+    width: 950px;
+    list-style: none;
+    padding: 5px;
+    font-family: 'Inter',sans-serif;
+    margin-left: -35px;
+    margin-top: 20px;
+}
+
+.modal .header__modal > button{
+    width: 58px;
+    height: 38px;
+    background-color: var(--color-fixed);
+    border: none;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+
+
+.conteudo__modal{
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo__modal > h1{
+    margin-left: 10px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.conteudo__modal > p{
+    margin-left: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+@media(min-width:425px){
+    .modal__container .modal{
+        width: 625px;
+    }
+    .modal__container .modal .header__modal{
+        width: 620px;
+    }
+    .modal__container .modal .conteudo__modal{
+        width: 620px;
+    }
+}
